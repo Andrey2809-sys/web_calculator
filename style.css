@@ -1,0 +1,80 @@
+body {
+	position: relative;
+
+	
+}
+
+button {
+
+	font-family: "Cascadia code";
+	font-size: 50px;
+	border-radius: 20px;
+	border: none;
+	color: white;
+	background-color: black;
+	width: 110px;
+	height: 80px;
+	margin: 5px;
+}
+
+input {
+	font-family: "Cascadia code";
+	font-size: 60px;
+	width: 430px;
+	height: 50px;
+	padding: 20px;
+	margin: 5px;
+	border-radius: 18px;
+	border: none;
+	outline: none;
+	color: orange;
+	background-color: black;
+}
+
+.calc {
+	position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+	padding: 12px;
+	width: 80%;
+	max-width: 480px;
+	border-radius: 20px;
+	background-color: orange;
+}
+
+.plus-minus  {
+	width: 110px;
+}
+
+.equal,.zero, .cl, .del, .mul, .minus, .plus {
+	color: orange;
+}
+
+.buttons {
+	margin-right: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.zero {
+	grid-column: 1 / span 2;
+	grid-row: 5 / span 1;
+	width: 230px;
+}
+
+.equal {
+	grid-column: 4;
+	grid-row:4 / span 2;
+	height: 170px;
+}
+
+button:hover {
+	color: orange;
+}
+
+button:active {
+	transform: scale(0.96);
+	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
